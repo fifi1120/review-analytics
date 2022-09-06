@@ -24,3 +24,11 @@ for d in list:
     if len(d) < 100:
         new.append(d) 
 print ('一共有', len(new), "笔留言长度小于100") #这里print要定个写，因为 for in （for loop）其实还是有回旋的含义在里面，等它全部回旋（筛选）完了再印出来
+
+
+good = []
+for d in list:
+    if "good" in d:
+        good.append(d)
+print ("一共有", len(good), "笔留言提到good")
+print (good[3])
